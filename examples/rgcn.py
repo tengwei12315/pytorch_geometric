@@ -6,6 +6,7 @@ from torch_geometric.datasets import Entities
 from torch_geometric.nn import RGCNConv
 
 name = 'MUTAG'
+##拼接路径
 path = osp.join(
     osp.dirname(osp.realpath(__file__)), '..', 'data', 'Entities', name)
 dataset = Entities(path, name)
